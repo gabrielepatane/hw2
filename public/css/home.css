@@ -1,0 +1,274 @@
+body{
+    background-color: #070A21;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #f8f8f8;
+  }
+  
+  header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1920,h_1200/https://online.berklee.edu/takenote/wp-content/uploads/2020/11/what_music_producers_do_article_image_2020.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #logo{
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  #links a{
+    margin: 15px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #links a:hover{
+    color: #2738BA;
+  }
+
+  #links strong{
+    font-size: 16px;
+    margin: 15px;
+  }
+  
+  @media (max-width: 500px) {
+    #links {
+      display: none;
+    }
+  }
+  
+  #separator{
+    display: inline-block;
+    height: 16px;
+    width: 1px;
+    background: currentColor;
+  }
+  
+  #menu {
+    display: none;
+  }
+  
+  #menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 500px) {
+    #menu {
+      display: block;
+    }
+  }
+  
+  .button{
+    padding: 5px 15px;
+    border: 2px solid #f8f8f8;
+    border-radius: 50px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .button:hover{
+    background-color: #f8f8f8;
+    color: black;
+    cursor: pointer;
+  }
+  
+  header h1{
+    z-index: 1;
+    font-size: 3em;
+  }
+  
+  @media (max-width: 500px) {
+    header h1 {
+      font-size: 2em;
+      padding: 0 30px;
+    }
+  }
+  
+  .subtitle{
+    z-index: 1;
+    font-size: 18px;
+  }
+  
+  @media (max-width: 500px) {
+    .subtitle {
+      padding: 0 30px;
+    }
+  }
+
+  .subtitle2{
+    text-align: center;
+    margin-top: 48px;
+  }
+  
+  section h1{
+    margin-left: 30px;
+    margin-top: 100px
+  }
+
+  #search input[type=submit]{
+    display: none;
+}
+  
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center
+  }
+  
+  @media (max-width: 500px) {
+    .container{
+      height: auto;
+      flex-direction: column;
+    }
+  }
+
+  footer{
+    background-color: #000;
+    padding: 48px 0 24px;
+  }
+  
+  footer nav{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 500px) {
+    footer nav {
+      margin: 0 30px;
+    }
+  }
+  
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  @media (max-width: 500px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+  
+  .footer-col{
+    padding: 0 15px;
+    height: 100%;
+  }
+  
+  @media (max-width: 500px) {
+    .footer-col {
+      margin-bottom: 30px;
+      padding: 0;
+    }
+  }
+  
+  footer h1{
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  .footer-col strong{
+    display: flex;
+    color: #919496;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .footer-col a,  .footer-col p {
+    font-size: 18px;
+    padding: 3px 0 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    
+  transition: color 0.2s;
+}
+
+.footer-col a:hover{
+  color: #2738BA;
+}
+
+#home{
+  margin-top: 16px;
+  padding: 5px 15px;
+  border: 2px solid #f8f8f8;
+  border-radius: 50px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#home:hover{
+  background-color: #f8f8f8;
+  color: black;
+  cursor: pointer;
+}
+  
+  .search{
+  margin-top: 48px;
+  margin-bottom: 48px;
+  text-align: center;
+  }
+
+  .search input:focus{
+    outline: none;
+  }
+
+  .searchIcon{
+    position: absolute;
+    background: #fff0 url(../icons/search.svg) 10px 12px no-repeat;
+    width: 50px;
+    height: 50px;
+    left: 25vw;
+    top: 123vh;
+  }
+  
+  .searchBar{
+  font-size: 18px;
+  width: 50%;
+  height: 50px;
+  padding: 0px 16px 0px 48px;
+  border: 2px solid #070a21;
+  border-radius: 50px;
+  margin-top: 4px;
+  }
+  
+  .sectionTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  
